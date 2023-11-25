@@ -9,14 +9,12 @@ class Program
         job1._jobTitle = "Cashier";
         job1._startYear = 2013;
         job1._endYear = 2015;
-        // job1.Display();
 
         Job job2 = new Job();
         job2._company = "Postnet";
         job2._jobTitle = "Graphic Designer";
         job2._startYear = 2015;
         job2._endYear = 2020;
-        // job2.Display();
 
         Resume myResume = new Resume();
         myResume._name = "Cody Smith";

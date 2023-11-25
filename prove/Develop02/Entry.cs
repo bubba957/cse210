@@ -17,18 +17,13 @@ public class Entry
         _promptText[3] = "Was there anything that made your day go by better?";
         _promptText[4] = "Is there anything valuable you found today?";
 
-        string fileName = "myFile.txt";
+        Console.WriteLine(_promptText[line]);
+        Console.Write("> ");
+        _entry = Console.ReadLine();
+        // _entry = entry;
 
-        using (StreamWriter output = new StreamWriter(fileName))
-        {
-            Console.WriteLine(_promptText[line]);
-            Console.Write("> ");
-            _entry = Console.ReadLine();
-
-            DateTime theCurrentTime = DateTime.Now;
-            _date = theCurrentTime.ToShortDateString();
-            output.WriteLine($"Date: {_date} - Prompt: {_promptText[line]}");
-            output.WriteLine(_entry);
-        }
+        DateTime theCurrentTime = DateTime.Now;
+        _date = theCurrentTime.ToShortDateString();
+        Console.WriteLine($"Date: {_date} - Prompt: {_promptText[line]} \n{_entry}");
     }
 }

@@ -31,19 +31,19 @@ class Program
             }
             else if (quit == 2)
             {
-                theJournal.AddEntry(anEntry);
+                theJournal.DisplayAll();
             }
             else if (quit == 3)
             {
-                // theJournal.SaveToFile(anEntry);
+                Console.WriteLine("What is the filename?");
+                string file = Console.ReadLine();
+                theJournal.LoadFromFile(file);
             }
             else if (quit == 4)
             {
-
-            }
-            else if (quit == 5)
-            {
-
+                Console.WriteLine("What is the filename?");
+                string file = Console.ReadLine();
+                theJournal.SaveToFile(file);
             }
         }
     }
