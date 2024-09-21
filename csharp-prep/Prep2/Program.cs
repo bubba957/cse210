@@ -16,7 +16,6 @@ class Program
         if (percent >= 90)
         {
             letter = "A";
-            percent % 10;
         }
         else if (percent >= 80)
         {
@@ -34,7 +33,7 @@ class Program
         {
             letter = "F";
         }
-        Console.WriteLine($"You got a/an {letter} {sign}.");
+        Console.WriteLine($"You got a/an {letter}.");
 
         if (percent >= 70)
         {
