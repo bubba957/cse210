@@ -26,8 +26,8 @@ class Program
 
         resume._name = "Cody Smith";
 
-        // resume._jobs.Add(job1);
-        // resume._jobs.Add(job2);
+        resume._jobs.Add(job1);
+        resume._jobs.Add(job2);
 
         resume.Display();
     }
