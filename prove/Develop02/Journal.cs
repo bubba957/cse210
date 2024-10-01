@@ -5,14 +5,16 @@ using System.IO.Pipes;
 
 public class Journal
 {
-    public List<Entry> _entries;
+    public List<Entry> _entries = new List<Entry>();
     public void AddEntry(Entry newEntry)
     {
-        Entry _entries = new Entry();
+        // Entry _entries = new Entry();
 
         PromptGenerator prompt = new PromptGenerator();
         
         prompt.GetRandomPrompt();
+
+        // return prompt;
 
         // Console.Write($"> {newEntry}");
         // string userEntry = Console.ReadLine();
@@ -21,12 +23,13 @@ public class Journal
     }
     public void DisplayAll()
     {
+        
         // Entry _entries = new Entry();
         // _entries._date = ;
 
         foreach (Entry e in _entries)
         {
-
+            Console.WriteLine(e);
         }
     }
     public void SaveToFile(string file)

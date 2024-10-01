@@ -28,6 +28,7 @@ class Program
             if (cont == 1)
             {
                 journal.AddEntry(entry);
+                journal._entries.Add(entry);
             }
             else if (cont == 2)
             {
