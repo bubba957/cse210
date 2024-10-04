@@ -14,6 +14,9 @@ public class Journal
         
         prompt.GetRandomPrompt();
 
+        
+        // Entry.Add(newEntry);
+
         // return prompt;
 
         // Console.Write($"> {newEntry}");
@@ -29,7 +32,7 @@ public class Journal
 
         foreach (Entry e in _entries)
         {
-            Console.WriteLine(e);
+            e.Display();
         }
     }
     public void SaveToFile(string file)
