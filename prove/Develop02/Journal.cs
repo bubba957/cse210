@@ -14,7 +14,16 @@ public class Journal
         
         prompt.GetRandomPrompt();
 
-        
+        DateTime theCurrentTime = DateTime.Now;
+        string dateText = theCurrentTime.ToShortDateString();
+
+        foreach (Entry e in _entries)
+        {
+            // e._date = 
+        }
+
+        // _entries.Add(_date);
+        // _entries.Add(_entries);
         // Entry.Add(newEntry);
 
         // return prompt;
@@ -26,10 +35,6 @@ public class Journal
     }
     public void DisplayAll()
     {
-        
-        // Entry _entries = new Entry();
-        // _entries._date = ;
-
         foreach (Entry e in _entries)
         {
             e.Display();
@@ -37,8 +42,6 @@ public class Journal
     }
     public void SaveToFile(string file)
     {
-        // Entry _entries = new Entry();
-
         Console.WriteLine("Saving to 'journal.txt'...");
 
         string fileName = "journal.txt";
@@ -73,9 +76,6 @@ public class Journal
         foreach (Entry e in _entries)
         {
             e.Display();
-
-            // Console.WriteLine($"Date: {e._date} Prompt: {e._promptText}");
-            // Console.WriteLine($"Entry: {e._entryText}");
         }
     }
 }

@@ -24,8 +24,9 @@ public class Reference
     }
     public string GetDisplayText()
     {
-        string reference = $"{_book} {_chapter}:{_verse}";
-        // reference = $"{_book} {_chapter}:{_verse}-{_endVerse}";
+        string reference = $"{_book} {_chapter}:{_verse} ";
+        // reference = $"{_book} {_chapter}:{_verse}-{_endVerse} ";
+        
         return reference;
     }
 }

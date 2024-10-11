@@ -9,15 +9,24 @@ public class Scripture
     public Scripture(Reference reference, string text)
     {
         _reference = reference;
-        string phrase = text;
+        // _words = text;
+        foreach (Word w in _words)
+        {
+            // w = text;
+            w.GetDisplayText();   
+        }
+        // string phrase = text;
     }
     public void HideRandomWords(int numberToHide)
     {
-
+        foreach (Word w in _words)
+        {
+            w.Hide();
+        }
     }
     public string GetDisplayText()
     {
-        return "";
+        return "Jesus answered, Verily, verily, I say unto thee, Except a man be born of water and of the Spirit, he cannot enter into the kingdom of God.";
     }
     public bool IsCompletelyHidden()
     {
