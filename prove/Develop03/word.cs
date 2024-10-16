@@ -12,15 +12,23 @@ public class Word
     }
     public void Hide()
     {
-
+        _isHidden = true;
     }
     public void Show()
     {
-
+        _isHidden = false;
     }
     public bool IsHidden()
     {
-        return false;
+        // if (_isHidden == true)
+        // {
+        //     _isHidden = true;
+        // }
+        // else if (_isHidden == false)
+        // {
+        //     _isHidden = false;
+        // }
+        return _isHidden;
     }
     public string GetDisplayText()
     {

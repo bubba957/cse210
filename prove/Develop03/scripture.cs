@@ -21,7 +21,9 @@ public class Scripture
     {
         foreach (Word w in _words)
         {
-            w.Hide();
+            // w.Hide();
+            Random random = new Random();
+            
         }
     }
     public string GetDisplayText()

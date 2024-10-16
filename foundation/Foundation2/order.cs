@@ -5,9 +5,12 @@ using System.IO.Pipes;
 
 public class Order
 {
+    int _totalPrice;
+    string _packing;
+    string _shipping;
     private List<Product> _products = new List<Product>();
     private List<Customer> _customers = new List<Customer>();
-    // public void TotalPrice()
+    // public int TotalPrice()
     // {
     //     foreach (Product p in _products)
     //     {
@@ -15,19 +18,27 @@ public class Order
     //         {
     //             double totalCost = p.GetTotal();
     //             int shipping = c.GetCountry();
-    //             double totalPrice = totalCost + shipping;
+    //             double _totalPrice = totalCost + shipping;
     //             Console.WriteLine(totalPrice);
     //         }
     //     }
+    //     return _totalPrice;
     // }
-    public void GetPackingLabel()
+    public string GetPackingLabel()
     {
         foreach (Product p in _products)
         {
-            Console.WriteLine($"The product informations is: ");
-            Console.WriteLine($"The name of the product is: {p.GetProductName}");
-            Console.WriteLine($"The ID of the product is: {p.GetProductID}");
+            _packing = $"The product name is {p.GetProductName} and the ID is {p.GetProductID}";
+            
         }
-        // return false;
+        return _packing;
+    }
+    public string GetShippingLabel()
+    {
+        foreach (Customer c in _customers)
+        {
+            _shipping = $"{c.GetCustomerName} lives on {c.GetCustomerAddress}.";
+        }
+        return _shipping;
     }
 }
