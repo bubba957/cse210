@@ -18,6 +18,8 @@ class Program
             Console.WriteLine();
             Console.WriteLine("Press the Enter key to hide some words or type 'quit' to quit.");
             quit = Console.ReadLine();
+
+            scripture.HideRandomWords(2);
         }
     }
 }

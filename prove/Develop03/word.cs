@@ -32,6 +32,7 @@ public class Word
     }
     public string GetDisplayText()
     {
-        return "";
+        _text = "Jesus answered, Verily, verily, I say unto thee, Except a man be born of water and of the Spirit, he cannot enter into the kingdom of God.";
+        return _text;
     }
 }
