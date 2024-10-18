@@ -15,7 +15,7 @@ class Program
         Console.WriteLine(comment2.GetCommentDisplay());
         Console.WriteLine(comment3.GetCommentDisplay());
         Console.WriteLine(comment4.GetCommentDisplay());
-        Console.WriteLine(video1.commentList());
+        Console.WriteLine(video1.CommentList());
 
         Console.WriteLine();
         Video video2 = new Video("Redo of my room", "___cods___", 130);

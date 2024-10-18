@@ -8,7 +8,7 @@ public class Video
     private string _title;
     private string _author;
     private int _length;
-    private int numberOfComments;
+    private int _numberOfComments;
     private List<Comment> _comments = new List<Comment>();
     public Video(string title, string author, int length)
     {
@@ -17,17 +17,17 @@ public class Video
         _length = length;
         // _comments = comment;
     }
-    public int commentList()
+    public int CommentList()
     {
         foreach (Comment c in _comments)
         {
-            numberOfComments = numberOfComments + 1;
+            _numberOfComments = _numberOfComments + 1;
         }
         // for (_comments i = 0; i < _comments; i++)
         // {
         //     numberOfComments += 1;
         // }
-        return numberOfComments;
+        return _numberOfComments;
     }
     public string GetVideoDisplay()
     {

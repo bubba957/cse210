@@ -7,7 +7,7 @@ public class Comment
 {
     private string _name;
     private string _commentText;
-    private int number;
+    private int _number;
     public Comment(string name, string text)
     {
         _name = name;
@@ -20,7 +20,7 @@ public class Comment
     }
     public int GetCommentNumber()
     {
-        number = number + 1;
-        return number;
+        _number = _number + 1;
+        return _number;
     }
 }
