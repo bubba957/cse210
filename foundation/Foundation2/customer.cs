@@ -7,10 +7,10 @@ public class Customer
 {
     private string _name;
     private List<Address> _addresses = new List<Address>();
-    public Customer(string name, List<Address> addresses)
+    public Customer(string name)
     {
         _name = name;
-        _addresses = addresses;
+        // _addresses = addresses;
     }
     public string GetCustomerName()
     {

@@ -20,7 +20,7 @@ public class Comment
     }
     public int GetCommentNumber()
     {
-        _number = _number + 1;
+        _number =+ 1;
         return _number;
     }
 }

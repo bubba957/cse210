@@ -5,10 +5,11 @@ class Program
 {
     static void Main(string[] args)
     {
+        Activity activity = new Activity();
         BreathingActivity breathing = new BreathingActivity();
-        int quit = 0;
+        string quit = "";
 
-        while (quit != 4)
+        while (quit != "4")
         {
             Console.WriteLine("Menu Options");
             Console.WriteLine("1. Start breathing activity.");
@@ -19,18 +20,19 @@ class Program
             Console.WriteLine();
             Console.Write("Select a choice from the menu. ");
 
-            string contin = Console.ReadLine();
-            quit = int.Parse(contin);
+            quit = Console.ReadLine();
+            // quit = int.Parse(contin);
 
-            if (quit == 1)
+            if (quit == "1")
             {
-                
+                activity.SetActivity(quit);
+                activity.DisplayStartingMessage();
             }
-            else if (quit == 2)
+            else if (quit == "2")
             {
 
             }
-            else if (quit == 3)
+            else if (quit == "3")
             {
 
             }

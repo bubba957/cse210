@@ -19,14 +19,11 @@ public class Video
     }
     public int CommentList()
     {
-        foreach (Comment c in _comments)
-        {
-            _numberOfComments = _numberOfComments + 1;
-        }
-        // for (_comments i = 0; i < _comments; i++)
+        // foreach (Comment c in _comments)
         // {
-        //     numberOfComments += 1;
+        //     _numberOfComments =+ 1;
         // }
+        _numberOfComments = _comments.Count();
         return _numberOfComments;
     }
     public string GetVideoDisplay()

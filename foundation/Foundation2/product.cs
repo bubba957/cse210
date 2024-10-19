@@ -9,6 +9,8 @@ public class Product
     private string _id;
     private double _price;
     private int _quantity;
+    private double _total;
+    private string total;
     public Product(string name, string id, double price, int quantity)
     {
         _productName = name;
@@ -24,10 +26,17 @@ public class Product
         }
     }     
 
-    public double GetTotal()
+    public string GetTotal()
     {
+        _price = _price * _quantity;
         _price = Math.Round(_price, 2);
-        return _price;
+        string total = _price.ToString();
+        total = $"The price of quantity {_quantity} of {_productName} is {total}";
+        return total;
+    }
+    public double GetAllTotal()
+    {
+        return _total;
     }
     public string GetProductName()
     {

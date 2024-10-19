@@ -14,9 +14,14 @@ class Activity
         Console.WriteLine($"Welcome to the {_name}");
     }
     public void DisplayEndingMessage()
-        {
+    {
 
-        }
+    }
+    public void SetActivity(string num)
+    {
+        // num = _name;
+        _name = num;
+    }
     public void ShowSpinner(int seconds)
     {
 
