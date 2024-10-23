@@ -8,25 +8,24 @@ class Program
 
         Square square1 = new Square("blue", 4);
         shapes.Add(square1);
+        DisplaShape(square1);
 
         Rectangle rectangle1 = new Rectangle("yellow", 5, 3);
         shapes.Add(rectangle1);
+        DisplaShape(rectangle1);
 
         Circle circle1 = new Circle("green", 2);
         shapes.Add(circle1);
+        DisplaShape(circle1);
 
-        DisplaShape();
-
-        void DisplaShape()
+        void DisplaShape(Shape shape)
         {
-            foreach (Shape s in shapes)
-            {
-                string color = s.GetColor();
+            string color = shape.GetColor();
 
-                double area = s.GetArea();
+            double area = shape.GetArea();
 
-                Console.WriteLine($"The color of the shape is {color} and its area is {area}.");
-            }
+            Console.WriteLine($"The color of the shape is {color} and its area is {area}.");
+            Console.WriteLine();
         }
     }
 }
