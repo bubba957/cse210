@@ -11,4 +11,8 @@ class Square : Shape
     {
         return _side * _side;
     }
+    public override string GetSize()
+    {
+        return "69";
+    }
 }

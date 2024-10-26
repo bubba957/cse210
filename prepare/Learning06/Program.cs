@@ -21,10 +21,10 @@ class Program
         void DisplaShape(Shape shape)
         {
             string color = shape.GetColor();
-
             double area = shape.GetArea();
+            string bat = shape.GetSize();
 
-            Console.WriteLine($"The color of the shape is {color} and its area is {area}.");
+            Console.WriteLine($"The color of the shape is {color} and its area is {area}{bat}.");
             Console.WriteLine();
         }
     }

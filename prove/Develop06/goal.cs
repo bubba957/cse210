@@ -2,12 +2,12 @@ abstract class Goal
 {
     private string _shortName;
     private string _description;
-    private string _points;
-    public Goal(string name, string des, string points)
+    private int _points;
+    public Goal(string name, string des, int points)
     {
-        _shortName = name;
-        _description = des;
-        _points = points;
+        // _shortName = name;
+        // _description = des;
+        // _points = points;
     }
     public abstract void RecordEvent();
     public abstract bool IsComplete();
